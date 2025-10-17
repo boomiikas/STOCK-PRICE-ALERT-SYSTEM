@@ -1,0 +1,6 @@
+pydantic-settings
+docker
+requests
+SQLAlchemy 
+psycopg2-binary
+pymongo
