@@ -187,8 +187,8 @@ Special thanks to the open-source communities of:
 
 ## 👥 Collaborators
 
--[Boomika S](https://github.com/boomiikas)
--[Sakthi  Gowshick S](https://github.com/sakthigowshick)
--[Sanjaykumar S](https://github.com/sanjaysk17)
--[Sharmila M](https://github.com/sharmilamalaiyarasan)
--[Subhiksha Kodibass](https://github.com/subhiksha-kodi)
+[Boomika S](https://github.com/boomiikas) |
+[Sakthi  Gowshick S](https://github.com/sakthigowshick) |
+[Sanjaykumar S](https://github.com/sanjaysk17) |
+[Sharmila M](https://github.com/sharmilamalaiyarasan) |
+[Subhiksha Kodibass](https://github.com/subhiksha-kodi) 
