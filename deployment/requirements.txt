@@ -1,6 +1,10 @@
 pydantic-settings
 docker
 requests
-SQLAlchemy 
+SQLAlchemy
 psycopg2-binary
 pymongo
+asyncpg
+celery
+redis
+python-dotenv

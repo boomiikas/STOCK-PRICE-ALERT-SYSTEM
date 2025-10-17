@@ -1,7 +1,8 @@
+# backend/core/config.py
 from pydantic_settings import BaseSettings
 from dotenv import load_dotenv
 
-# Load the .env file
+# Load environment variables from .env
 load_dotenv()
 
 class Settings(BaseSettings):
@@ -18,12 +19,19 @@ class Settings(BaseSettings):
     MONGO_HOST: str = "localhost"
     MONGO_PORT: int = 27017
 
-    # API Keys & Secrets
+    # API Keys
     FINNHUB_API_KEY: str
     VONAGE_API_KEY: str
     VONAGE_API_SECRET: str
+
+    # JWT
     JWT_SECRET: str
     JWT_ALGORITHM: str = "HS256"
+
+    # Member 2 specific
+    REDIS_URL: str
+    TS_HOST: str
+    TS_PORT: int
 
     class Config:
         env_file = ".env"
