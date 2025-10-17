@@ -24,7 +24,7 @@ This ensures users can act immediately and make informed trading decisions.
 |------------|-------------|
 | **Data Collection** | Collect real-time stock prices and financial news data via APIs. |
 | **Price Prediction** | Use a **TCN model** to forecast the next stock price from historical data. |
-| **Threshold Alerting** | Trigger instant **SMS alerts** through Twilio when price thresholds are met. |
+| **Threshold Alerting** | Trigger instant **SMS alerts** through Vonage when price thresholds are met. |
 | **Sentiment Analysis** | Analyze daily news sentiment using **FinBERT** and summarize for users. |
 | **Dashboard Visualization** | Build an interactive dashboard for live data, portfolio, and alerts. |
 | **User Management** | Enable secure signup/login with **Google or phone (OTP)** authentication. |
@@ -59,7 +59,7 @@ The system follows an **event-driven, microservices architecture** with modular 
 
 #### Step 4: Alert & Notification
 - **Celery + Redis** scheduler continuously checks for threshold breaches
-- On trigger, sends **Buy/Sell alerts** to users via **Twilio SMS API**
+- On trigger, sends **Buy/Sell alerts** to users via **Vonage SMS API**
 
 #### Step 5: Dashboard Visualization
 - Built with **React.js** and **Chart.js / Recharts**
@@ -75,7 +75,7 @@ The system follows an **event-driven, microservices architecture** with modular 
 | **Backend / API** | FastAPI, Celery, Redis | Handle requests, schedule tasks, and ensure security |
 | **Database** | MongoDB, TimescaleDB | Store user data, alerts, and historical stock records |
 | **Model** | PyTorch (TCN), FinBERT (HuggingFace) | Forecast prices and analyze sentiment |
-| **Notification** | Twilio SMS API | Send instant alerts and summaries |
+| **Notification** | Vonage SMS API | Send instant alerts and summaries |
 | **Authentication** | JWT, Google OAuth | Secure login and session handling |
 | **Hosting** | GitHub | Deployment and version control |
 
@@ -85,7 +85,7 @@ The system follows an **event-driven, microservices architecture** with modular 
 
 | Tool | Definition |
 |------|-------------|
-| **Twilio** | Cloud communication API to send SMS alerts instantly when price thresholds are breached. |
+| **Vonage** | Cloud communication API to send SMS alerts instantly when price thresholds are breached. |
 | **TCN (Temporal Convolutional Network)** | Deep learning model specialized for time-series forecasting (stock price prediction). |
 | **FinBERT** | BERT model fine-tuned for financial text sentiment analysis. |
 | **MongoDB** | NoSQL database for user profiles, alerts, and general app data. |
@@ -102,7 +102,7 @@ The system follows an **event-driven, microservices architecture** with modular 
 ✅ MongoDB & TimescaleDB connected  
 🚧 Work in progress on:
 - Model integration (TCN & FinBERT)
-- Automated alert triggering via Celery/Twilio
+- Automated alert triggering via Celery/Vonage
 - Dashboard enhancements and deployment
 
 ---
